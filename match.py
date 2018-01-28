@@ -1,3 +1,4 @@
+import json
 
 class Match:
 	def __init__(self, division, date, match_number, time, hometeam, awayteam, hometeam_goals, awayteam_goals, location):
@@ -14,3 +15,11 @@ class Match:
 	def print_match(self):
 		print(self.division, self.date, self.match_number, self.time, self.hometeam, 
 			self.awayteam, self.hometeam_goals, self.awayteam_goals, self.location)
+
+	def get_values(self):
+		return(self.division, self.date, self.match_number, self.time, self.hometeam, 
+			self.awayteam, self.hometeam_goals, self.awayteam_goals, self.location)
+
+	def match_dict(self):
+		return self.__dict__
+		

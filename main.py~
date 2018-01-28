@@ -116,6 +116,4 @@ for url in league_schedule_urls:
 insert_matches_into_db(matches)
 '''
 matches = get_matches_from_db()
-for match in matches:
-	match.print_match()
 print_json_to_file(matches)
